@@ -2,9 +2,9 @@
 # Author: Marcin Kaminski
 
 import csv
-import os
+#import os
 
-print("Current working directory:", os.getcwd())
+#print("Current working directory:", os.getcwd())
 
 #FILENAME = "2.1-data.csv"
 #DATADIR = "../..//Topic02-representingdata/"
