@@ -2,12 +2,18 @@
 # Author: Marcin Kaminski
 
 import csv
+import os
 
-FILENAME = "2.1-data.csv"
-# DATADIR = "where did you put it"
+print("Current working directory:", os.getcwd())
+
+#FILENAME = "2.1-data.csv"
+#DATADIR = "../..//Topic02-representingdata/"
+DATAPATH = "Topic02-representingdata/2.1-data.csv"
+
 
 # with open (DATADIR + FILENAME, "rt") as fp:
-with open(FILENAME, "rt") as fp:
+
+with open(DATAPATH, "rt") as fp:
     reader = csv.reader(fp, delimiter =",")
     for line in reader:
         print(line)
