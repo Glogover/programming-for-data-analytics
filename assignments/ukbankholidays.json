@@ -3,7 +3,7 @@
     "division": "england-and-wales",
     "events": [
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2024-01-01",
         "notes": "",
         "bunting": true
@@ -51,7 +51,7 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2025-01-01",
         "notes": "",
         "bunting": true
@@ -99,7 +99,7 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2026-01-01",
         "notes": "",
         "bunting": true
@@ -147,7 +147,7 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2027-01-01",
         "notes": "",
         "bunting": true
@@ -200,7 +200,7 @@
     "division": "scotland",
     "events": [
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2024-01-01",
         "notes": "",
         "bunting": true
@@ -236,7 +236,7 @@
         "bunting": true
       },
       {
-        "title": "St Andrew’s Day",
+        "title": "St Andrew\u2019s Day",
         "date": "2024-12-02",
         "notes": "Substitute day",
         "bunting": true
@@ -254,7 +254,7 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2025-01-01",
         "notes": "",
         "bunting": true
@@ -290,7 +290,7 @@
         "bunting": true
       },
       {
-        "title": "St Andrew’s Day",
+        "title": "St Andrew\u2019s Day",
         "date": "2025-12-01",
         "notes": "Substitute day",
         "bunting": true
@@ -308,7 +308,7 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2026-01-01",
         "notes": "",
         "bunting": true
@@ -344,7 +344,7 @@
         "bunting": true
       },
       {
-        "title": "St Andrew’s Day",
+        "title": "St Andrew\u2019s Day",
         "date": "2026-11-30",
         "notes": "",
         "bunting": true
@@ -362,7 +362,7 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2027-01-01",
         "notes": "",
         "bunting": true
@@ -398,7 +398,7 @@
         "bunting": true
       },
       {
-        "title": "St Andrew’s Day",
+        "title": "St Andrew\u2019s Day",
         "date": "2027-11-30",
         "notes": "",
         "bunting": true
@@ -421,13 +421,13 @@
     "division": "northern-ireland",
     "events": [
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2024-01-01",
         "notes": "",
         "bunting": true
       },
       {
-        "title": "St Patrick’s Day",
+        "title": "St Patrick\u2019s Day",
         "date": "2024-03-18",
         "notes": "Substitute day",
         "bunting": true
@@ -457,7 +457,7 @@
         "bunting": true
       },
       {
-        "title": "Battle of the Boyne (Orangemen’s Day)",
+        "title": "Battle of the Boyne (Orangemen\u2019s Day)",
         "date": "2024-07-12",
         "notes": "",
         "bunting": false
@@ -481,13 +481,13 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2025-01-01",
         "notes": "",
         "bunting": true
       },
       {
-        "title": "St Patrick’s Day",
+        "title": "St Patrick\u2019s Day",
         "date": "2025-03-17",
         "notes": "",
         "bunting": true
@@ -517,7 +517,7 @@
         "bunting": true
       },
       {
-        "title": "Battle of the Boyne (Orangemen’s Day)",
+        "title": "Battle of the Boyne (Orangemen\u2019s Day)",
         "date": "2025-07-14",
         "notes": "Substitute day",
         "bunting": false
@@ -541,13 +541,13 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2026-01-01",
         "notes": "",
         "bunting": true
       },
       {
-        "title": "St Patrick’s Day",
+        "title": "St Patrick\u2019s Day",
         "date": "2026-03-17",
         "notes": "",
         "bunting": true
@@ -577,7 +577,7 @@
         "bunting": true
       },
       {
-        "title": "Battle of the Boyne (Orangemen’s Day)",
+        "title": "Battle of the Boyne (Orangemen\u2019s Day)",
         "date": "2026-07-13",
         "notes": "Substitute day",
         "bunting": false
@@ -601,13 +601,13 @@
         "bunting": true
       },
       {
-        "title": "New Year’s Day",
+        "title": "New Year\u2019s Day",
         "date": "2027-01-01",
         "notes": "",
         "bunting": true
       },
       {
-        "title": "St Patrick’s Day",
+        "title": "St Patrick\u2019s Day",
         "date": "2027-03-17",
         "notes": "",
         "bunting": true
@@ -637,7 +637,7 @@
         "bunting": true
       },
       {
-        "title": "Battle of the Boyne (Orangemen’s Day)",
+        "title": "Battle of the Boyne (Orangemen\u2019s Day)",
         "date": "2027-07-12",
         "notes": "",
         "bunting": false

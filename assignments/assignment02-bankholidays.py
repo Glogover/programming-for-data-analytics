@@ -28,7 +28,7 @@ for holiday in data['northern-ireland']['events']: # Loop through each holiday i
 
 # Collect all other UK regions bank holiday titles
 other_titles = [] # Initialize an empty list to store titles of bank holidays from other UK regions
-for region in ['england-and-wales', 'scotland']: # Loop through England and Wales, and Scotland
+for region in ['england-and-wales', 'scotland']: # Loop through England and Wales and Scotland
     for holiday in data[region]['events']: # Loop through each holiday in the region
         other_titles.append(holiday['title']) # Append the title of each holiday to the list
 
