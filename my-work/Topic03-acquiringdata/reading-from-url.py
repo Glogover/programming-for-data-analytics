@@ -9,6 +9,6 @@ data = response.json()
 print(data)
 # we can now analyze the data
 for event in data["northern-ireland"]["events"]:
-    print(f"{event}")
+    #print(f"{event}")
     print(f"{event['title']} on {event['date']}")
 
