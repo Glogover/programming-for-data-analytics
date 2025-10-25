@@ -28,9 +28,26 @@ for holiday in data['northern-ireland']['events']: # Loop through each holiday i
 
 # Collect all other UK regions bank holiday titles
 other_titles = [] # Initialize an empty list to store titles of bank holidays from other UK regions
- 
+for region in ['england-and-wales', 'scotland']: # Loop through England and Wales, and Scotland
+    for holiday in data[region]['events']: # Loop through each holiday in the region
+        other_titles.append(holiday['title']) # Append the title of each holiday to the list
 
-print("Bank holidays in Northern Ireland:") # Print a header message
-for holiday in data['northern-ireland']['events']: # Loop through each holiday
-    print(f"{holiday['date']}: {holiday['title']}") # Print the date and title of each holiday
+# Find holidays unique to Northern Ireland
+unique_NI_holidays = [] # Initialize an empty list to store unique Northern Ireland bank holidays
+for holiday in NI_holidays: # Loop through each Northern Ireland holiday
+    if holiday['title'] not in other_titles: # Check if the holiday title is not in the list of other regions' titles
+        unique_NI_holidays.append(holiday) # Append the unique holiday to the list
+
+# Print the unique Northern Ireland bank holidays 
+print("\nUnique bank holidays in Northern Ireland:") # Print a header for the unique holidays
+if len(unique_NI_holidays) == 0: # Check if there are no unique holidays
+    print("There are no unique bank holidays in Northern Ireland.") # Print a message indicating no unique holidays
+else: # If there are unique holidays
+   for holiday in unique_NI_holidays: # Loop through each unique Northern Ireland holiday
+    print(f"{holiday['date']}: {holiday['title']}") # Print the date and title of each unique holiday
+
+
+# End of program
+
+
       
