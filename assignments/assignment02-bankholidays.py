@@ -1,11 +1,13 @@
 # This program prints out the dates of the bank holidays that happen in Northern Ireland.
 # Author: Marcin Kaminski
 
-import json
+import json # Import the JSON module to work with JSON data
 
-FILENAME = 'ukbankholidays.json'
+FILENAME = 'ukbankholidays.json' # Define the filename containing the JSON data
 
-with open(FILENAME, 'rt') as file:
-    for line in file:
-        print(line, end="")
-        
+with open(FILENAME, 'rt') as file: # Open the JSON file for reading
+    data = json.load(file)  # Load JSON data from the file
+    print("Bank holidays in Northern Ireland:") # Print a header message
+    for holiday in data['northern-ireland']['events']: # Loop through each holiday
+        print(holiday['date']) # Print the date of the holiday
+
