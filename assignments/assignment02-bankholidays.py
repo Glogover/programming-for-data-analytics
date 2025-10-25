@@ -1,4 +1,4 @@
-# This program fetches and prints out the dates of the bank holidays that happen in Northern Ireland.
+# This program prints the bank holidays that are unique to Northern Ireland
 # Author: Marcin Kaminski
 
 import requests  # Import the requests module to handle HTTP requests
