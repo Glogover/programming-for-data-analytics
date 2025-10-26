@@ -10,5 +10,5 @@ url = "https://api.open-meteo.com/v1/forecast?latitude=52.8436&longitude=-8.9864
 # url = "s3://noaa-gsod-pds/2020/72278023183.csv"
 
 df = pd.read_csv(url)
-print(df.head())
+print(df.head)
 
