@@ -1,4 +1,7 @@
-# This code will anonymise the sub domains of ip addresses
+"""
+This code will anonymise the sub domains of IP addresses by Xing out the last 
+two triplets; the new lines will be stored in another file
+"""
 # Author: Marcin Kaminski
 
 
@@ -7,7 +10,13 @@ import re # for regular expressions
 #regex = "\d{1,3}\.\d{1,3} " # this will find other numbers apart from ips
 
 regex = "(\d{1,3}\.\d{1,3}\.)\d{1,3}\.\d{1,3}" # matches an IP address, with groups to capture the first two octets
-replacementText="\\1XXX.XXX " # we use \\1 to refer to the first group found
+replacementText="\\1XXX.XXX " 
+""" 
+we use \\1 to refer to the first group found; 
+The brackets take the first two tripplets as a group that we include in the substitution 
+with \1 (we need \\1 because we want to tell python that we do want the \, 
+so we escape that)
+"""
 filename = "smallerAccess.log.txt" # the log file to read
 outputFileName = "anonymisedIPs.txt" # the output file to write
 
