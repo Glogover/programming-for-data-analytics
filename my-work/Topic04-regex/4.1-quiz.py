@@ -90,7 +90,7 @@ re.error: unterminated character set at position 0
 
 l. ^$ -->
 
-no matches
+Line 10, it contains nothing (empty line)
 
 
 """
