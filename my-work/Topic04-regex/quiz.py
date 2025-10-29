@@ -3,7 +3,21 @@
 
 import re # for regular expressions
 
-regex = "^Hell?o" # matches any string
+regex = ".*" # matches any string
+regex = "hello" # matches 'hello'
+regex = "Hello" # matches 'Hello'
+regex = "^Hello" # matches 'Hello' at the beginning of a line
+regex = "^Hell*o" # matches 'Helo', 'Hello', 'Helllo
+regex = "^Hell+o" # matches 'Hello', 'Helllo', 'Hellllo', etc.
+regex = "^Hell?o" # matches 'Helo' or 'Hello'
+regex = "^hello [A-Z]" # matches 'hello ' followed by a capital letter at
+regex = "^Hello [A-Z]" # matches 'Hello ' followed by a capital letter at
+regex = "= " # matches '= ' (equals sign followed by a space)
+regex = "# " # matches '# ' (hash sign followed by a space)
+regex = "[ " # invalid regex pattern (unterminated character set)
+regex = "^$" # matches an empty line
+
+
 
 filename = "quiz.txt"
 
@@ -51,6 +65,33 @@ Hello
 Hello World
 Helo John
 
+g. ^hello [A-Z] -->
+
+no matches
+
+
+h. ^Hello [A-Z] -->
+
+Hello World
+
+
+i. =  -->
+
+var = 123
+
+j. # -->
+
+change this #this will change
+
+k. [  -->
+
+no matches
+
+re.error: unterminated character set at position 0
+
+l. ^$ -->
+
+no matches
 
 
 """
