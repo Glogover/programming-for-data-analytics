@@ -29,7 +29,9 @@ with open(filename) as quizFile: # open the file
             print(matchingLine, end="") # print the matching line
 
 
-"""Quiz answers:
+"""
+Quiz answers:
+
 a. hello -->
 
 hello
@@ -39,7 +41,6 @@ b. Hello -->
 Hello
 Hello World
        Hello mary
-
 
 c. ^Hello -->
 
@@ -69,11 +70,9 @@ g. ^hello [A-Z] -->
 
 no matches
 
-
 h. ^Hello [A-Z] -->
 
 Hello World
-
 
 i. =  -->
 
