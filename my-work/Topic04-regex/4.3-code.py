@@ -1,11 +1,11 @@
-# This code will find some text in an access file
+# This code will find date/time in the smallerAccess.log.txt file
 # Author: Marcin Kaminski
 
 import re # for regular expressions
 
 regex = "\[.*\]" # matches anything inside square brackets, this will return the date/time
 
-filename = "smallerAccess.log"
+filename = "smallerAccess.log.txt"
 
 with open(filename) as inputFile:
    for line in inputFile:
