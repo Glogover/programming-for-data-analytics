@@ -4,18 +4,18 @@
 import re # for regular expressions
 
 regex = ".*" # matches any string
-regex = "hello" # matches 'hello'
-regex = "Hello" # matches 'Hello'
-regex = "^Hello" # matches 'Hello' at the beginning of a line
-regex = "^Hell*o" # matches 'Helo', 'Hello', 'Helllo
-regex = "^Hell+o" # matches 'Hello', 'Helllo', 'Hellllo', etc.
-regex = "^Hell?o" # matches 'Helo' or 'Hello'
-regex = "^hello [A-Z]" # matches 'hello ' followed by a capital letter at
-regex = "^Hello [A-Z]" # matches 'Hello ' followed by a capital letter at
-regex = "= " # matches '= ' (equals sign followed by a space)
-regex = "# " # matches '# ' (hash sign followed by a space)
-regex = "[ " # invalid regex pattern (unterminated character set)
-regex = "^$" # matches an empty line
+#regex = "hello" # matches 'hello'
+#regex = "Hello" # matches 'Hello'
+#regex = "^Hello" # matches 'Hello' at the beginning of a line
+#regex = "^Hell*o" # matches 'Helo', 'Hello', 'Helllo
+#regex = "^Hell+o" # matches 'Hello', 'Helllo', 'Hellllo', etc.
+#regex = "^Hell?o" # matches 'Helo' or 'Hello'
+#regex = "^hello [A-Z]" # matches 'hello ' followed by a capital letter at
+#regex = "^Hello [A-Z]" # matches 'Hello ' followed by a capital letter at
+#regex = "= " # matches '= ' (equals sign followed by a space)
+#regex = "# " # matches '# ' (hash sign followed by a space)
+#regex = "[ " # invalid regex pattern (unterminated character set)
+#regex = "^$" # matches an empty line
 
 
 
