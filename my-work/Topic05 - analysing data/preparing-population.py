@@ -12,7 +12,11 @@ FILENAME = "cso-populationbyage.csv"
 df = pd.read_csv(FILENAME)
 
 drop_col_list = ["Statistic Label","CensusYear","Sex","UNIT"]
+#df= df.drop(columns=drop_col_list)
 df.drop(columns=drop_col_list, inplace=True)
+
+df = df[df["Single Year of Age"] != "All ages"]
+
 
 print (df.head(3))
 
