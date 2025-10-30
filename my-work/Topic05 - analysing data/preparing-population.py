@@ -15,9 +15,10 @@ drop_col_list = ["Statistic Label","CensusYear","Sex","UNIT"]
 #df= df.drop(columns=drop_col_list)
 df.drop(columns=drop_col_list, inplace=True)
 
-df = df[df["Single Year of Age"] != "All ages"]
-
+df = df[df["Single Year of Age"] != "All ages"] # Keep only rows where age is specified
+df["Single Year of Age"] = df["Single Year of Age"].str.replace("Under 1 year","0") # Replace "Under 1 year" with "0"
 
 print (df.head(3))
+df.to_csv("population_for_analysis.csv")
 
 
