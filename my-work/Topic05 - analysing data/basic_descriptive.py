@@ -7,7 +7,7 @@ import pandas as pd
 even_example_values = pd.Series([1,2,2,3,4,5,6,10000])
 
 print(f'Series Values: {even_example_values.to_list()}')
-print(f'Seies Mean: {even_example_values.mean()}')
+print(f'Series Mean: {even_example_values.mean()}')
 print(f'Series Median: {even_example_values.median()}')
 print(f'Series Mode: {even_example_values.mode()}')
 
