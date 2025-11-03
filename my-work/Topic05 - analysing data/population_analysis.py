@@ -3,6 +3,8 @@
 
 import pandas as pd
 
-FILENAME = "cso-populationbyage.csv"
+FILENAME = "population_for_analysis.csv"
 
 df = pd.read_csv(FILENAME)
+
+print(df.head(3))
