@@ -3,7 +3,7 @@
 
 import pandas as pd
 
-FILENAME = "population_for_analysis.csv"
+FILENAME = "population_for_analysis.csv" 
 
 df = pd.read_csv(FILENAME)
 
@@ -12,6 +12,6 @@ headers = df.columns[1:]
 print(headers)
 district = headers[0]
 print(df[district].describe())
-
+print(df[district])
 
 
