@@ -1,0 +1,10 @@
+# Demonstration of calculating basic standard deviation in Python
+# Author: Marcin Kaminski
+
+import pandas as pd
+
+# create series
+temp1 = pd.Series([56, 65, 78, 86, 88, 92])
+temp2 = pd.Series9([33, 65, 78, 88, 92, 109])
+
+# 
