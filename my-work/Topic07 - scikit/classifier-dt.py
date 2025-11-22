@@ -5,7 +5,7 @@ dataurl = "https://gist.githubusercontent.com/Thanatoz-1/9e7fdfb8189f0cdf5d73a49
 irisdf = pd.read_csv(dataurl)
 print(irisdf.head(3))
 
-colnames = ["sepal_length (cm)", "sepal_width (cm)", "petal_length (cm)", "petal_width (cm)"]
+colnames = ["sepal length (cm)", "sepal width (cm)", "petal length (cm)", "petal width (cm)"]
 x = irisdf[colnames] # input features, independent variables
 y = irisdf["target"] # output label, target variable, dependent variable
 
