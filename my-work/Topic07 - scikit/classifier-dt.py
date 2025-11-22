@@ -6,6 +6,11 @@ irisdf = pd.read_csv(dataurl)
 irisdf.head(3)
 print(irisdf.head(3))
 
+colnames = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
+x = irisdf[colnames] # input features, independent variables
+y = irisdf["target"] # output label, target variable, dependent variable
+
+
 
 
 
