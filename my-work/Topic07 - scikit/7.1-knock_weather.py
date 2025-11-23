@@ -37,18 +37,25 @@ print("The correlation between the month and the mean temperature is:", corrtemp
 # https://stackoverflow.com/questions/29314033/drop-rows-containing-empty-cells-from-a-pandas-dataframe
 
 # 4. Great, now lets drop the NAs
+
 cleandf = df[["month", "wdsp"]] # make a new dataframe with only the month and windspeed
 # replace the spaces with NaN
-cleandf['wdsp']= cleandf.loc[:,('wdsp')].replace(' ', np.nan) 
+cleandf['wdsp'] = cleandf['wdsp'].replace(' ', np.nan)
 cleandf.dropna(inplace=True) # drop the rows with NaN values
 
 # print(cleandf.head(3)) # check the new dataframe
 
-# Now we just need to convert the wind speed to floats
+# 5. Now we just need to convert the wind speed to floats
 cleandf["wdsp"] = cleandf["wdsp"].astype(float) # convert the wind speed to floats
 
+# *** Now we can analyse ***
 
+# 6. Is there any correlation between the windspeed and the month?
 
+corrwind = cleandf["month"].corr(cleandf["wdsp"])
+print(f"The correlation between the month and the windspeed is: {corrwind}")
+# The answer is still no, but we can visualise the data to see if there is any pattern. 
+# The reason for no correlation is the same as before, the month is cyclical and the windspeed is affected by the year.
 
 
 
