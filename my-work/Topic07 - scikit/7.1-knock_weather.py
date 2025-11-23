@@ -16,12 +16,12 @@ import matplotlib.pyplot as plt
 
 # 1. Look at the csv file and realise that the first 19 lines do not contain data, so we need to skip them.
 
-df = pd.read_csv("https://cli.fusio.net/cli/climate_data/webdata/mly4935.csv", skiprows=19)
+df = pd.read_csv("https://cli.fusio.net/cli/climate_data/webdata/mly4935.csv", skiprows=19) # skip the first 19 rows
 print(df.head(3))
 
 # 2. Is there any correlation between the mean temperature and the month?
 
-corrtemp = df["month"].corr(df["meant"])
+corrtemp = df["month"].corr(df["meant"]) # calculate the correlation between the month and the mean temperature
 print("The correlation between the month and the mean temperature is:", corrtemp)
 
 # The answer is no, but that is for a number of reasons:
@@ -40,7 +40,7 @@ print("The correlation between the month and the mean temperature is:", corrtemp
 
 cleandf = df[["month", "wdsp"]] # make a new dataframe with only the month and windspeed
 # replace the spaces with NaN
-cleandf['wdsp'] = cleandf['wdsp'].replace(' ', np.nan)
+cleandf['wdsp'] = cleandf['wdsp'].replace(' ', np.nan) # replace the spaces with NaN
 cleandf.dropna(inplace=True) # drop the rows with NaN values
 
 # print(cleandf.head(3)) # check the new dataframe
@@ -52,17 +52,17 @@ cleandf["wdsp"] = cleandf["wdsp"].astype(float) # convert the wind speed to floa
 
 # 6. Is there any correlation between the windspeed and the month?
 
-corrwind = cleandf["month"].corr(cleandf["wdsp"])
+corrwind = cleandf["month"].corr(cleandf["wdsp"]) # calculate the correlation between the month and the windspeed
 print(f"The correlation between the month and the windspeed is: {corrwind}")
 # The answer is still no, but we can visualise the data to see if there is any pattern. 
 # The reason for no correlation is the same as before, the month is cyclical and the windspeed is affected by the year.
 
 # 7. There does not seem to be any correlation, but we can visualise the data to see if there is any pattern using regression plot.
 
-sns.set_style('whitegrid')
+sns.set_style('whitegrid') # set the style
 #sns.scatterplot(x='month', y='wdsp', data=cleandf)
-sns.lmplot(x='month', y='wdsp', order=3, data=cleandf)
-plt.show()
+sns.lmplot(x='month', y='wdsp', order=3, data=cleandf) # plot the regression line of order 3
+plt.show() # show the plot
 
 # There is a slight pattern, with higher windspeeds in the winter months and lower windspeeds in the summer months, but it is not very strong.
 
