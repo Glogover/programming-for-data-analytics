@@ -57,6 +57,10 @@ print(f"The correlation between the month and the windspeed is: {corrwind}")
 # The answer is still no, but we can visualise the data to see if there is any pattern. 
 # The reason for no correlation is the same as before, the month is cyclical and the windspeed is affected by the year.
 
+# 7. There does not seem to be any correlation, but we can visualise the data to see if there is any pattern using regression plot.
+
+sns.set_style('whitegrid')
+sns.scatterplot(x='month', y='wdsp', data=cleandf)
 
 
 
