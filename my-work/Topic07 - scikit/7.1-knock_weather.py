@@ -1,7 +1,7 @@
 """In this lab I want to see if there is any relation between the windspeed and the month in Knock. 
 I am going to use the dataset
 "https://cli.fusio.net/cli/climate_data/webdata/mly4935.csv"""
-# Author: Marcin Kaminski
+# Student: Marcin Kaminski
 
 # *** Import the libraries ***
 
