@@ -60,8 +60,13 @@ print(f"The correlation between the month and the windspeed is: {corrwind}")
 # 7. There does not seem to be any correlation, but we can visualise the data to see if there is any pattern using regression plot.
 
 sns.set_style('whitegrid')
-sns.scatterplot(x='month', y='wdsp', data=cleandf)
+#sns.scatterplot(x='month', y='wdsp', data=cleandf)
+sns.lmplot(x='month', y='wdsp', order=3, data=cleandf)
+plt.show()
 
+# There is a slight pattern, with higher windspeeds in the winter months and lower windspeeds in the summer months, but it is not very strong.
+
+# End of lab 7.1
 
 
 
