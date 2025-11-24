@@ -1,5 +1,5 @@
 """ This program create a regression plot for the amount of data that was transferred 
-for each hour of the day using the data from a log file (smallerAccess.log)."""
+for each hour of the day using the data from a log file (access.log.txt)."""
 
 # Author: Marcin Kaminski
 
